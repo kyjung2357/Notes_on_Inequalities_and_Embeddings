@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt]{article}
+
+
+\usepackage[top=0.5in, bottom=1in, left=0.8in, right=0.8in, headsep=0.in, centering]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{caption} 
+\usepackage{array}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{kotex}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{conjecture}{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{property}[theorem]{Property}
+
+\def\Xint#1{\mathchoice
+{\XXint\displaystyle\textstyle{#1}}%
+{\XXint\textstyle\scriptstyle{#1}}%
+{\XXint\scriptstyle\scriptscriptstyle{#1}}%
+{\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+\!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+\vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+\title{
+Notes on Inequalities and Embedding}
+
+\author{
+Kiyuob Jung}
+
+\begin{document}
+\date{}
+\maketitle
+
+
+
+\section{Introduction}
+
+In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\mathbb{R}^{n}$.
+
+\section{Definition}
+
+가나다라마바사
+
+\subsection{Definitions}
+
+\section{Inequalities}
+
+\section{Sobolev Embedding}
+
+In this section, we deal with embeddings of diverse Sobolev spaces into others.
+Given a Sobolev space, it automatically belongs to certain other space, depending on the relationship between the integrability $p$ and the dimension $n$.
+There are three cases:
+\begin{align*}
+    &p \in [1, n), \\
+    &p = n, \\
+    &p \in (n, \infty].
+\end{align*}
+In particular, the second case $p = n$ is called the \emph{borderline case}. 
+
+\subsection{The case $p \in [1, n)$}
+
+\begin{definition}
+    If $p \in [1, n)$, the \emph{Sobolev conjugate} $p^{\ast}$ of $p$ is defined by 
+    \begin{equation*} 
+        p^{\ast} := \frac{np}{n-p}.
+    \end{equation*}
+\end{definition}
+
+\begin{remark}
+    A simple calculation shows the following:
+    \begin{enumerate}[label=(\roman*)] 
+    \rm\item $p^{\ast} > p$,
+    \rm\item $\displaystyle \frac{1}{p^{\ast}} = \frac{1}{p} - \frac{1}{n}$.
+    \end{enumerate}
+\end{remark}
+
+$\Omega \subset \mathbb{R}^{n}$ to be open and 
+
+\begin{theorem}
+[Hypothesis]. The following are equivalent:
+\begin{enumerate}[label=(\roman*)]
+\rm \item ${\it text}$. \label{item:1st}
+\rm \item ${\it text}$. \label{item:2nd}
+\rm \item ${\it text}$. \label{item:3rd}
+\end{enumerate}
+\end{theorem}
+
+\begin{lemma}
+[Hypothesis]. The following hold:
+\begin{enumerate}[label=(\alph*)]
+\rm \item ${\it text}$ \label{item:first}
+\rm \item ${\it text}$ \label{item:second}
+\rm \item ${\it text}$ \label{item:third}
+\end{enumerate}
+\end{lemma}
+
+$$
+ =
+\begin{cases} 
+, & \text{if } \\ 
+, & \text{if } \\ 
+, & \text{if }  
+\end{cases}
+$$
+
+
+
+then
+\begin{enumerate}
+\rm\item the direct scattery problem is to determine $u^s$ from $u^i$;
+\rm\item the inverse scattery problem is to determine the nature of inhomogeneity to reconstruct the differential equation and/or its domain from a knowledge of the asymptotic behavior $u^s$.
+\end{enumerate}
+
+
+
+
+
+\end{document}
+
+
+
