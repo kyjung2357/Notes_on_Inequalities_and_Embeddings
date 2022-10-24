@@ -67,7 +67,7 @@ In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\ma
 \section{Sobolev Embedding}
 
 In this section, we deal with embeddings of diverse Sobolev spaces into others.
-Given a Sobolev space, it automatically belongs to certain other space, depending on the relationship between the integrability $p$ and the dimension $n$.
+Given a Sobolev space, it automatically belongs to certain other space, depending on the relationship between the integrability $p$ and the dimension $n$.\footnote{The regularity of domains also affects the inclusion.}
 There are three cases:
 \begin{align*}
     &p \in [1, n), \\
@@ -75,11 +75,14 @@ There are three cases:
     &p \in (n, \infty].
 \end{align*}
 In particular, the second case $p = n$ is called the \emph{borderline case}. 
+What are we trying to obtain from the Sobolev embedding theory?
+Broadly speaking, given a Sobolev space $W^{k, p}$, imbeddings of $W^{k, p}$ target two types of Banach spaces: either another Sobolev space $W^{j, q}$ or H$\ddot{\rm o}$lder spaces $C^{j, \alpha}$ for some constants $j \leq k$, $q \geq p$, and $0 \leq \alpha \leq 1$.
 
-\subsection{The case $p \in [1, n)$}
+
+\subsection{The case $1 \leq p < n$}
 
 \begin{definition}
-    If $p \in [1, n)$, the \emph{Sobolev conjugate} $p^{\ast}$ of $p$ is defined by 
+    If $1 \leq p < n$, the \emph{Sobolev conjugate} $p^{\ast}$ of $p$ is defined by 
     \begin{equation*} 
         p^{\ast} := \frac{np}{n-p}.
     \end{equation*}
@@ -89,9 +92,71 @@ In particular, the second case $p = n$ is called the \emph{borderline case}.
     A simple calculation shows the following:
     \begin{enumerate}[label=(\roman*)] 
     \rm\item $p^{\ast} > p$,
-    \rm\item $\displaystyle \frac{1}{p^{\ast}} = \frac{1}{p} - \frac{1}{n}$.
+    \rm\item $\displaystyle \frac{1}{p^{\ast}} = \frac{1}{p} - \frac{1}{n}$,
+    \rm\item $p^{\ast} \to \infty$ as $p \to n$.
     \end{enumerate}
 \end{remark}
+
+\begin{theorem}
+    \text{\rm (Gagliardo-Nirenberg-Sobolev inequality)}
+    If $1 \leq p < n$, then there exists a constant $C$, depending only on $p$ and $n$, such that
+    \begin{align*}
+    \|u\|_{L^{p^*}\left(\mathbb{R}^n\right)} \leq C\|D u\|_{L^p\left(\mathbb{R}^n\right)},
+    \end{align*}
+    for all $u \in C_c^1\left(\mathbb{R}^n\right)$.
+\end{theorem}
+
+\begin{theorem}  
+    \text{\rm (Estimates for $W^{1, p}, 1 \leq p < n$)}
+    Let $U$ be a bounded, open subset of $\mathbb{R}^n$, and suppose $\partial U$ is $C^1$. 
+    Assume $1 \leq p < n$ and $u \in W^{1, p}(U)$. 
+    Then $u \in L^{p^*}(U)$, with the estimate
+    \begin{align*}
+    \|u\|_{L^{p^*}(U)} \leq C\|u\|_{W^{1, p}(U)},
+    \end{align*}
+    the constant $C$ depending only on $p, n$, and $U$.
+\end{theorem}
+
+\subsection{The case $p=n$}
+
+\subsection{The case $n < p \leq \infty$}
+
+For convenience as in the notation for the Sobolev conjugate, we write 
+\begin{equation*} 
+    \gamma:=1- \frac{n}{p},
+\end{equation*}
+whenever $n < p \leq \infty$.
+
+\begin{theorem}
+    \text{\rm (Morrey's inequality)}
+    If $n < p \leq \infty$, then there exists a constant $C$, depending only on $p$ and $n$, such that
+    \begin{align*}
+    \|u\|_{C^{0, \gamma}\left(\mathbb{R}^n\right)} \leq C\|u\|_{W^{1, p}\left(\mathbb{R}^n\right)}
+    \end{align*}
+    for all $u \in C^1\left(\mathbb{R}^n\right)$.
+\end{theorem}
+
+\begin{theorem}
+    \text{\rm (Estimates for $W^{1, p}$, $n<p \leq \infty$)}
+    Let $U$ be a bounded, open subset of $\mathbb{R}^n$, and suppose $\partial U$ is $C^1$. Assume $n < p \leq \infty$ and $u \in W^{1, p}(U)$. 
+    Then $u$ has a version $u^{\ast} \in C^{0, \gamma}(\bar{U})$ with with the estimate
+    \begin{align*}
+        \left\|u^*\right\|_{C^{0, \gamma}(\bar{U})} \leq C\|u\|_{W^{1, p}(U)},
+    \end{align*}
+    the constant $C$ depending only on $p, n$ and $U$.
+\end{theorem}
+
+\subsection{The case $p = \infty$}
+
+\begin{theorem}
+    \text{\rm (Characterization of $\left.W^{1, \infty}\right)$}
+    Let $U$ be open and bounded, with $\partial U$ of class $C^1$. 
+    Then $u: U \rightarrow \mathbb{R}$ is Lipschitz continuous if and only if $u \in W^{1, \infty}(U)$
+\end{theorem}
+
+\newpage 
+
+\subsection{The general case}
 
 $\Omega \subset \mathbb{R}^{n}$ to be open and 
 

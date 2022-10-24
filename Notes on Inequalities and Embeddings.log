@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2021.11.13)  22 OCT 2022 02:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2021.11.13)  24 OCT 2022 21:50
 entering extended mode
 **"c:/Users/KIYUOB/Research/Notes_on_Inequalities_and_Embeddings/Notes on Inequalities and Embeddings.tex"
 ("c:/Users/KIYUOB/Research/Notes_on_Inequalities_and_Embeddings/Notes on Inequalities and Embeddings.tex"
@@ -324,19 +324,19 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/KIYUOB/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] ("Notes on Inequalities and Embeddings.aux") ) 
+{C:/Users/KIYUOB/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] ("Notes on Inequalities and Embeddings.aux") ) 
 Here is how much of TeX's memory you used:
- 5062 strings out of 480851
- 79482 string characters out of 2903154
- 647563 words of memory out of 3000000
- 22628 multiletter control sequences out of 15000+600000
- 414222 words of font info for 66 fonts, out of 8000000 for 9000
+ 5077 strings out of 480851
+ 79624 string characters out of 2903154
+ 649563 words of memory out of 3000000
+ 22637 multiletter control sequences out of 15000+600000
+ 416412 words of font info for 75 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,9n,66p,332b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmac.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb0.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb2.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb7.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb9.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmbc.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmc0.pfb>
-Output written on "Notes on Inequalities and Embeddings.pdf" (2 pages, 439404 bytes).
+ 57i,10n,66p,381b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmac.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb0.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb2.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb7.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmb9.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmbc.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/nanumtype1/nanummjmc0.pfb>
+Output written on "Notes on Inequalities and Embeddings.pdf" (3 pages, 498326 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
