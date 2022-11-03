@@ -1,26 +1,19 @@
-\documentclass[a4paper,11pt]{article}
-
+\documentclass[11pt,a4paper]{report}
 
 \usepackage[top=0.5in, bottom=1in, left=0.8in, right=0.8in, headsep=0.in, centering]{geometry}
-\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{enumitem}
 \usepackage{amsthm}
-\usepackage{caption} 
-\usepackage{array}
-\usepackage{caption}
-\usepackage{amsmath}
-\usepackage{kotex}
+\usepackage{bookmark}
+\usepackage{enumitem}
+\usepackage{float}
 
-\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
-\newtheorem*{conjecture}{Conjecture}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
@@ -40,27 +33,87 @@
 \def\ddashint{\Xint=}
 \def\dashint{\Xint-}
 
-\title{
-Notes on Inequalities and Embedding}
-
-\author{
-Kiyuob Jung}
-
 \begin{document}
-\date{}
-\maketitle
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE PDE Notes \par}
+	\vspace{1cm}
+	{\scshape\Large \par}
+	\vspace{1.5cm}
+	{\huge\bfseries Notes on Inequalities and Embeddings\par}
+	\vspace{2cm}
+	{\Large\itshape Kiyuob Jung\par}
+	\vspace{7cm}
+	
+	\begin{figure}[H] 
+	\centering 
+	\includegraphics[scale=0.4]{Illustration/Logo.png} 
+	\end{figure}
+	\vspace{2cm}
+
+	Department of Mathematics,\par
+	Kyungpook National University
+	
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\subsection*{Preface}
+
+These are notes from the seminar with the authors that are heavily based on the book Lecture Notes on Functional Analysis With Applications to Linear Partial Differential Equations by Alberto Bressan, together with other sources that are mostly listed in the Bibliography. 
+Usually, we conform the contents of the book as well as the numberings.
+
+\subsection*{Abbreviation}
+
+Since these notes is not for formal research, we almost always employ the following abbreviations:
+
+\noindent $\diamond$ iff : if and only if
+
+\noindent $\diamond$ s.t. : s.t.
+
+\noindent $\diamond$ TFAE : The following are equivalent
+
+\noindent $\diamond$ v.s. : vector space
+
+\noindent $\diamond$ n.v.s. : normed vector space
+
+\noindent $\diamond$ f.n.v.s. : finite dimensional normed vector space
+
+\subsection*{Notation}
+
+Let a set $X$. 
+We employ the following notations:
+
+\noindent $\diamond$ $\mathbb{R}^{n}$ : $n$-dimensional real Euclidean space, $\mathbb{R}=\mathbb{R}^{1}$
+
+\noindent $\diamond$ $\mathbb{C}^{n}$ : $n$-dimensional complex space, $\mathbb{C}=\mathbb{C}^{1}$
+
+\noindent $\diamond$ $\mathbb{K}$ : either $\mathbb{R}$ or $\mathbb{C}$.
+
+\noindent $\diamond$ $\partial X$ : boundary of $X$.
+
+\noindent $\diamond$ $\mathcal{C}(X) = \left\{ f:X \to \mathbb{R}  :  f~\text{is continuous (possibly unbounded) on }X \right\}$.
+
+\noindent $\diamond$ $d(x,y)$ : Euclidean distance.
+
+\newpage 
+
+\chapter{Introduction} 
 
 
-
-\section{Introduction}
+\chapter{Definitions and notations} 
 
 In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\mathbb{R}^{n}$.
 
-\section{Definition}
-
-가나다라마바사
-
-\subsection{Definitions}
+\section{Definitions}
 
 \begin{definition}
     Let $p>1$ and define $q \in \mathbb{R}$ by 
@@ -80,7 +133,113 @@ In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\ma
     \end{enumerate}
 \end{remark}
 
-\section{Inequalities}
+\chapter{Basic properties}
+
+\section{Averages of a function}
+
+\begin{definition}
+	Let $f \in L^1(U)$ with an open set $U \subset \mathbb{R}^{n}$.
+	\begin{enumerate}[label=(\alph*)] 
+	\rm\item An average of $f$ over set $E$ is 
+	\begin{equation*} 
+		\dashint_{E} f d x:=\frac{1}{\operatorname{meas}(E)} \int_{E} f(x) d x.
+	\end{equation*}
+	\rm\item An average of $f$ over the ball $B_r(x_0)$ is 
+	\begin{equation*} 
+		\dashint_{B_r(x_0)} f d x:= \frac{1}{\alpha(n) r^{n}} \int_{B_r(x_0)} f(x) d x.
+	\end{equation*}
+	\rm\item An average of $f$ over the sphere $\partial B_r(x_0)$ is 
+	\begin{equation*} 
+		\dashint_{\partial B_r(x_0)} f d S :=\frac{1}{n\alpha(n) r^{n-1}} \int_{\partial B_r(x_0)} f(x) d S.
+	\end{equation*}
+	\end{enumerate}
+\end{definition}
+
+\subsection{Change of variable}
+
+\begin{theorem}
+	Let $f:U \to \mathbb{R}$ with an open set $U \subset \mathbb{R}^{n}$.
+	\begin{enumerate}[label=(\alph*)] 
+	\rm\item $\displaystyle \int_{B_r(x_0)} f(ax + b) dx = \frac{1}{r^n}\int_{B_{ar}(x_0 + b)} f(x) dx$.
+	\rm\item $\displaystyle \dashint_{B_r(x_0)} f(ax + b) dx = \dashint_{B_{ar}(x_0 + b)} f(x) dx$.
+	\end{enumerate}
+\end{theorem}
+
+\begin{proof} 
+	TODO 
+
+	To show (b), let $\tilde{x} := ax + b$. 
+	Then $d \tilde{x} = r^n dx$.
+	Also, since $\left\vert \tilde{x} - b \right\vert = \left\vert ax \right\vert < \left\vert a \right\vert r$, we get $\tilde{x} \in B_{\left\vert a \right\vert r}(x_0 + b)$.
+	Hence, 
+	\begin{align*}
+		\dashint_{B_r(x_0)} f(ax + b) dx &= \frac{1}{\alpha(n) r^{n}} \int_{B_r(x_0)} f(x) d x \\
+		&= \dashint_{B_{ar}(x_0 + b)} f(\tilde{x}) d\tilde{x} \\
+		&= \dashint_{B_{ar}(x_0 + b)} f(\tilde{x}) d\tilde{x}.
+	\end{align*}
+\end{proof}
+
+\subsection{Polar coordinates}
+
+Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be continuous and summable. 
+Then
+\begin{enumerate}[label=(\alph*)]
+\item 
+$\displaystyle \int_{\mathbb{R}^{n}} f d x=\int_{0}^{\infty}\left(\int_{\partial B_r(x_{0})} f(x) d S\right) d r \quad \forall x_{0} \in \mathbb{R}^{n}$.
+\item $\displaystyle \frac{d}{d r}\left(\int_{B_r(x_{0})} f(x) d x\right)=\int_{\partial B_r(x_{0})} f(x) d S$ for each $r>0$.
+\end{enumerate}
+
+
+\chapter{Inequalities} 
+
+\section{Power inequalities}
+
+\begin{theorem}
+	The following statements holds.
+	\begin{enumerate}[label=(\alph*)] 
+		\rm\item $1 + x \leq e^{x} \quad \forall x \in \mathbb{R}$.
+		\rm\item (Cauchy's inequality) \\[0.1cm]
+		$\displaystyle xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}$ 
+		\rm\item $\displaystyle e^{(x + y)/2} < \frac{e^{y} - e^{x}}{y - x} \quad \forall x, y \in \mathbb{R}$ with $x \neq y$.
+	\end{enumerate}
+	
+\end{theorem}
+
+\begin{theorem}
+	The following statements holds.
+	\begin{enumerate}[label=(\alph*)] 
+		\rm\item $\displaystyle \left(\frac{1}{e}\right)^{\frac{1}{e}} \leq x^{x} \quad \forall x > 0$.
+		\rm\item $\displaystyle x \leq x^{x^{x}} \quad \forall x > 0$.
+		\rm\item $1 < x^{y}+y^{x}  \quad \forall x, y > 0$
+		\rm\item $x^{y}+y^{x} \leq x^{x}+y^{y} \quad \forall x, y > 0$
+		\rm\item $x^{e y}+y^{e x} \leq x^{e x}+y^{e y} \quad \forall x, y > 0$
+		\rm\item $\displaystyle \frac{1-\frac{1}{x^{y}}}{y} \leq \ln (x) \leq \frac{x^{y} - 1}{y} \quad \forall x, y > 0$. The upper and lower bounds converge to $\ln (x)$ as $y \rightarrow 0$.
+		\rm\item $2 < (x+y)^{z}+(x+z)^{y}+(y+z)^{x} \quad \forall x, y, z > 0$.
+		\rm\item $x^{2 y}+y^{2 z}+z^{2 x} \leq x^{2 x}+y^{2 y}+z^{2 z} \quad \forall x, y, z > 0$.
+		\rm\item $(x y z)^{(x+y+z) / 3} \leq x^{x} y^{y} z^{z} \quad \forall x, y, z > 0$
+	\end{enumerate}
+	
+\end{theorem}
+
+\begin{theorem}
+	The following statements holds.
+	\begin{enumerate}[label=(\alph*)] 
+		\rm\item (Cauchy's inequality with $\varepsilon$)\\[0.1cm]
+		$\displaystyle xy \leq \epsilon x^{2}+\frac{y^{2}}{4 \varepsilon} \quad \forall x, y>0$ , $\forall \varepsilon>0$.
+	\end{enumerate}
+\end{theorem}
+
+\begin{theorem}
+	The following statements holds.
+	\begin{enumerate}[label=(\alph*)] 
+		\rm\item $(x+y)^{p} < x^{p}+y^{p} \quad \forall x, y > 0$, $\forall p \in (0, 1)$.
+		\rm\item $(x + y)^{p} \leq 2^{p - 1}\left(x^{p} + y^{p}\right) \quad \forall x, y \geq 0$, $\forall p \in [1, \infty)$.
+	\end{enumerate}
+\end{theorem}
+
+
+\chapter{Embeddings}
+
 
 \section{Sobolev Embedding}
 
@@ -95,7 +254,6 @@ There are three cases:
 In particular, the second case $p = n$ is called the \emph{borderline case}. 
 What are we trying to obtain from the Sobolev embedding theory?
 Broadly speaking, given a Sobolev space $W^{k, p}$, imbeddings of $W^{k, p}$ target two types of Banach spaces: either another Sobolev space $W^{j, q}$ or H$\ddot{\rm o}$lder spaces $C^{j, \alpha}$ for some constants $j \leq k$, $q \geq p$, and $0 \leq \alpha \leq 1$.
-
 
 \subsection{The case $1 \leq p < n$}
 
@@ -157,7 +315,7 @@ whenever $n < p \leq \infty$.
 \begin{theorem}
     \text{\rm (Estimates for $W^{1, p}$, $n<p \leq \infty$)}
     Let $U$ be a bounded, open subset of $\mathbb{R}^n$, and suppose $\partial U$ is $C^1$. Assume $n < p \leq \infty$ and $u \in W^{1, p}(U)$. 
-    Then $u$ has a version $u^{\ast} \in C^{0, \gamma}(\bar{U})$ with with the estimate
+    Then $u$ has a version $u^{\ast} \in C^{0, \gamma}(\overline{U})$ with with the estimate
     \begin{align*}
         \left\|u^*\right\|_{C^{0, \gamma}(\bar{U})} \leq C\|u\|_{W^{1, p}(U)},
     \end{align*}
@@ -167,57 +325,9 @@ whenever $n < p \leq \infty$.
 \subsection{The case $p = \infty$}
 
 \begin{theorem}
-    \text{\rm (Characterization of $\left.W^{1, \infty}\right)$}
+    \text{\rm (Characterization of $W^{1, \infty}$)}
     Let $U$ be open and bounded, with $\partial U$ of class $C^1$. 
     Then $u: U \rightarrow \mathbb{R}$ is Lipschitz continuous if and only if $u \in W^{1, \infty}(U)$
 \end{theorem}
 
-\newpage 
-
-\subsection{The general case}
-
-$\Omega \subset \mathbb{R}^{n}$ to be open and 
-
-\begin{theorem}
-[Hypothesis]. The following are equivalent:
-\begin{enumerate}[label=(\roman*)]
-\rm \item ${\it text}$. \label{item:1st}
-\rm \item ${\it text}$. \label{item:2nd}
-\rm \item ${\it text}$. \label{item:3rd}
-\end{enumerate}
-\end{theorem}
-
-\begin{lemma}
-[Hypothesis]. The following hold:
-\begin{enumerate}[label=(\alph*)]
-\rm \item ${\it text}$ \label{item:first}
-\rm \item ${\it text}$ \label{item:second}
-\rm \item ${\it text}$ \label{item:third}
-\end{enumerate}
-\end{lemma}
-
-$$
- =
-\begin{cases} 
-, & \text{if } \\ 
-, & \text{if } \\ 
-, & \text{if }  
-\end{cases}
-$$
-
-
-
-then
-\begin{enumerate}
-\rm\item the direct scattery problem is to determine $u^s$ from $u^i$;
-\rm\item the inverse scattery problem is to determine the nature of inhomogeneity to reconstruct the differential equation and/or its domain from a knowledge of the asymptotic behavior $u^s$.
-\end{enumerate}
-
-
-
-
-
 \end{document}
-
-
-
