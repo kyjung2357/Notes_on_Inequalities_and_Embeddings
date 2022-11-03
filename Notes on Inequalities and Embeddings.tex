@@ -43,7 +43,9 @@
 	{\huge\bfseries Notes on Inequalities and Embeddings\par}
 	\vspace{2cm}
 	{\Large\itshape Kiyuob Jung\par}
-	\vspace{7cm}
+	\vspace{2cm}
+	{\Large\bfseries (in progress)\par}
+	\vspace{5cm}
 	
 	\begin{figure}[H] 
 	\centering 
@@ -68,24 +70,17 @@
 
 \subsection*{Preface}
 
-These are notes from the seminar with the authors that are heavily based on the book Lecture Notes on Functional Analysis With Applications to Linear Partial Differential Equations by Alberto Bressan, together with other sources that are mostly listed in the Bibliography. 
-Usually, we conform the contents of the book as well as the numberings.
+Todo.
+
 
 \subsection*{Abbreviation}
 
 Since these notes is not for formal research, we almost always employ the following abbreviations:
 
-\noindent $\diamond$ iff : if and only if
-
 \noindent $\diamond$ s.t. : s.t.
 
 \noindent $\diamond$ TFAE : The following are equivalent
 
-\noindent $\diamond$ v.s. : vector space
-
-\noindent $\diamond$ n.v.s. : normed vector space
-
-\noindent $\diamond$ f.n.v.s. : finite dimensional normed vector space
 
 \subsection*{Notation}
 
@@ -100,20 +95,36 @@ We employ the following notations:
 
 \noindent $\diamond$ $\partial X$ : boundary of $X$.
 
-\noindent $\diamond$ $\mathcal{C}(X) = \left\{ f:X \to \mathbb{R}  :  f~\text{is continuous (possibly unbounded) on }X \right\}$.
-
-\noindent $\diamond$ $d(x,y)$ : Euclidean distance.
-
-\newpage 
-
-\chapter{Introduction} 
-
+\noindent $\diamond$ $\forall$ : for all.
 
 \chapter{Definitions and notations} 
 
 In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\mathbb{R}^{n}$.
 
 \section{Definitions}
+
+
+Here, we collect definitions for averages of a function.
+
+\begin{definition}
+	Let $f \in L^1(U)$ with an open set $U \subset \mathbb{R}^{n}$.
+	\begin{enumerate}[label=(\alph*)] 
+	\rm\item An average of $f$ over set $E$ is 
+	\begin{equation*} 
+		\dashint_{E} f d x:=\frac{1}{\operatorname{meas}(E)} \int_{E} f(x) d x.
+	\end{equation*}
+	\rm\item An average of $f$ over the ball $B_r(x_0)$ is 
+	\begin{equation*} 
+		\dashint_{B_r(x_0)} f d x:= \frac{1}{\alpha(n) r^{n}} \int_{B_r(x_0)} f(x) d x.
+	\end{equation*}
+	\rm\item An average of $f$ over the sphere $\partial B_r(x_0)$ is 
+	\begin{equation*} 
+		\dashint_{\partial B_r(x_0)} f d S :=\frac{1}{n\alpha(n) r^{n-1}} \int_{\partial B_r(x_0)} f(x) d S.
+	\end{equation*}
+	\end{enumerate}
+\end{definition}
+
+As for integrability, TODO.
 
 \begin{definition}
     Let $p>1$ and define $q \in \mathbb{R}$ by 
@@ -135,25 +146,6 @@ In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\ma
 
 \chapter{Basic properties}
 
-\section{Averages of a function}
-
-\begin{definition}
-	Let $f \in L^1(U)$ with an open set $U \subset \mathbb{R}^{n}$.
-	\begin{enumerate}[label=(\alph*)] 
-	\rm\item An average of $f$ over set $E$ is 
-	\begin{equation*} 
-		\dashint_{E} f d x:=\frac{1}{\operatorname{meas}(E)} \int_{E} f(x) d x.
-	\end{equation*}
-	\rm\item An average of $f$ over the ball $B_r(x_0)$ is 
-	\begin{equation*} 
-		\dashint_{B_r(x_0)} f d x:= \frac{1}{\alpha(n) r^{n}} \int_{B_r(x_0)} f(x) d x.
-	\end{equation*}
-	\rm\item An average of $f$ over the sphere $\partial B_r(x_0)$ is 
-	\begin{equation*} 
-		\dashint_{\partial B_r(x_0)} f d S :=\frac{1}{n\alpha(n) r^{n-1}} \int_{\partial B_r(x_0)} f(x) d S.
-	\end{equation*}
-	\end{enumerate}
-\end{definition}
 
 \subsection{Change of variable}
 

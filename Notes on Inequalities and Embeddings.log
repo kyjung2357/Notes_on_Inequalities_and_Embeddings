@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.27)  3 NOV 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.27)  3 NOV 2022 15:07
 entering extended mode
 **"c:/Users/user/Research/Notes_on_Inequalities_and_Embeddings/Notes on Inequalities and Embeddings.tex"
 (c:/Users/user/Research/Notes_on_Inequalities_and_Embeddings/Notes on Inequalities and Embeddings.tex
@@ -353,16 +353,16 @@ LaTeX Info: Redefining \nameref on input line 36.
 <Illustration/Logo.png, id=3, 349.0641pt x 348.8232pt>
 File: Illustration/Logo.png Graphic file (type png)
 <use Illustration/Logo.png>
-Package pdftex.def Info: Illustration/Logo.png  used on input line 50.
+Package pdftex.def Info: Illustration/Logo.png  used on input line 52.
 (pdftex.def)             Requested size: 139.62315pt x 139.5268pt.
  [1
 
 {C:/Users/user/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./Illustration/Logo.png>] (Notes on Inequalities and Embeddings.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
@@ -372,7 +372,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 \newpage
+l.69 \newpage
               [1
 
 ] [2]
@@ -387,76 +387,72 @@ Chapter 2.
 Chapter 3.
 [5
 
-] [6]
+]
 Chapter 4.
-[7
-
-]
-Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 258.
+(hyperref)                removing `math shift' on input line 250.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leq' on input line 258.
+(hyperref)                removing `\leq' on input line 250.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 258.
+(hyperref)                removing `math shift' on input line 250.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 296.
+(hyperref)                removing `math shift' on input line 288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 296.
+(hyperref)                removing `math shift' on input line 288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 298.
+(hyperref)                removing `math shift' on input line 290.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leq' on input line 298.
+(hyperref)                removing `\leq' on input line 290.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 298.
+(hyperref)                removing `\infty' on input line 290.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 298.
+(hyperref)                removing `math shift' on input line 290.
 
-[8
+[6
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 325.
+(hyperref)                removing `math shift' on input line 317.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 325.
+(hyperref)                removing `\infty' on input line 317.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 325.
+(hyperref)                removing `math shift' on input line 317.
 
-[9] (Notes on Inequalities and Embeddings.aux) ) 
+[7] (Notes on Inequalities and Embeddings.aux) ) 
 Here is how much of TeX's memory you used:
- 10254 strings out of 479163
- 151362 string characters out of 2854475
- 463924 words of memory out of 3000000
- 27654 multiletter control sequences out of 15000+600000
+ 10248 strings out of 479163
+ 151318 string characters out of 2854475
+ 463922 words of memory out of 3000000
+ 27652 multiletter control sequences out of 15000+600000
  415841 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,12n,77p,474b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,12n,77p,474b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Notes on Inequalities and Embeddings.pdf" (10 pages, 347068 bytes).
+Output written on "Notes on Inequalities and Embeddings.pdf" (8 pages, 342723 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
