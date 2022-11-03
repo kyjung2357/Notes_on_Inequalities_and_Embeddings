@@ -1,8 +1,9 @@
 \contentsline {chapter}{\numberline {1}Definitions and notations}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Definitions}{3}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Basic properties}{4}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}Change of variable}{4}{subsection.2.0.1}%
-\contentsline {subsection}{\numberline {2.0.2}Polar coordinates}{4}{subsection.2.0.2}%
+\contentsline {section}{\numberline {2.1}Change of variable}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Coordinates}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Polar coordinates}{4}{subsection.2.2.1}%
 \contentsline {chapter}{\numberline {3}Inequalities}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Power inequalities}{5}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Embeddings}{6}{chapter.4}%

@@ -147,15 +147,15 @@ As for integrability, TODO.
 \chapter{Basic properties}
 
 
-\subsection{Change of variable}
+\section{Change of variable}
 
-\begin{theorem}
+\begin{proposition}
 	Let $f:U \to \mathbb{R}$ with an open set $U \subset \mathbb{R}^{n}$.
 	\begin{enumerate}[label=(\alph*)] 
 	\rm\item $\displaystyle \int_{B_r(x_0)} f(ax + b) dx = \frac{1}{r^n}\int_{B_{ar}(x_0 + b)} f(x) dx$.
 	\rm\item $\displaystyle \dashint_{B_r(x_0)} f(ax + b) dx = \dashint_{B_{ar}(x_0 + b)} f(x) dx$.
 	\end{enumerate}
-\end{theorem}
+\end{proposition}
 
 \begin{proof} 
 	TODO 
@@ -171,16 +171,32 @@ As for integrability, TODO.
 	\end{align*}
 \end{proof}
 
+\begin{remark}
+	Convolution. TODO
+\end{remark}
+
+\section{Coordinates}
+
 \subsection{Polar coordinates}
+
+\begin{proposition}
 
 Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be continuous and summable. 
 Then
 \begin{enumerate}[label=(\alph*)]
-\item 
-$\displaystyle \int_{\mathbb{R}^{n}} f d x=\int_{0}^{\infty}\left(\int_{\partial B_r(x_{0})} f(x) d S\right) d r \quad \forall x_{0} \in \mathbb{R}^{n}$.
-\item $\displaystyle \frac{d}{d r}\left(\int_{B_r(x_{0})} f(x) d x\right)=\int_{\partial B_r(x_{0})} f(x) d S$ for each $r>0$.
+\rm\item $\displaystyle \int_{\mathbb{R}^{n}} f(x) d x=\int_{0}^{\infty}\left(\int_{\partial B_r(x_{0})} f(x) d\mathcal{S}\right) d r \quad \forall x_{0} \in \mathbb{R}^{n}$.
+\rm\item $\displaystyle \frac{d}{d r}\left(\int_{B_r(x_{0})} f(x) d x\right)=\int_{\partial B_r(x_{0})} f(x) d\mathcal{S} \quad \forall r>0$.
 \end{enumerate}
+\end{proposition}
 
+\begin{proposition}
+
+	Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be continuous and summable. 
+	Then
+	\begin{enumerate}[label=(\alph*)]
+	\rm\item $\displaystyle \int_{B_{\varepsilon}(0)} f(x) dx = \int_{0}^{\varepsilon} \left( \int_{\partial B_r(0)} f(x) d\mathcal{S}(x) \right) dr \quad \forall \varepsilon>0$.
+	\end{enumerate}
+	\end{proposition}
 
 \chapter{Inequalities} 
 
