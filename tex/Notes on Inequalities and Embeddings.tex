@@ -200,17 +200,16 @@ Then
 
 \chapter{Inequalities} 
 
-\section{Power inequalities}
+\section{Scalar}
+
+\subsection{Power inequalities}
 
 \begin{theorem}
 	The following statements holds.
 	\begin{enumerate}[label=(\alph*)] 
 		\rm\item $1 + x \leq e^{x} \quad \forall x \in \mathbb{R}$.
-		\rm\item (Cauchy's inequality) \\[0.1cm]
-		$\displaystyle xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}$. 
 		\rm\item $\displaystyle e^{(x + y)/2} < \frac{e^{y} - e^{x}}{y - x} \quad \forall x, y \in \mathbb{R}$ with $x \neq y$.
 	\end{enumerate}
-	
 \end{theorem}
 
 \begin{theorem}
@@ -229,19 +228,60 @@ Then
 	
 \end{theorem}
 
+\subsection{product type}
+
 \begin{theorem}
 	The following statements holds.
 	\begin{enumerate}[label=(\alph*)] 
+		\rm\item (Cauchy's inequality) \\[0.1cm]
+		$\displaystyle xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}$. 
 		\rm\item (Cauchy's inequality with $\varepsilon$)\\[0.1cm]
-		$\displaystyle xy \leq \epsilon x^{2}+\frac{y^{2}}{4 \varepsilon} \quad \forall x, y>0$ , $\forall \varepsilon>0$.
+		$\displaystyle xy \leq \varepsilon x^{2}+\frac{y^{2}}{4 \varepsilon} \quad \forall x, y>0$, $\forall \varepsilon>0$.
+		\rm\item (Young's inequality)\\[0.1cm]
+		$\displaystyle xy \leq \frac{x^p}{p} + \frac{y^q}{q} \quad \forall x, y>0$, $\forall 1 < p < q < \infty$, $p$ and $q$ are conjugate exponents.
 	\end{enumerate}
 \end{theorem}
+
+\subsection{summation type}
 
 \begin{theorem}
 	The following statements holds.
 	\begin{enumerate}[label=(\alph*)] 
 		\rm\item $(x+y)^{p} < x^{p}+y^{p} \quad \forall x, y > 0$, $\forall p \in (0, 1)$.
 		\rm\item $(x + y)^{p} \leq 2^{p - 1}\left(x^{p} + y^{p}\right) \quad \forall x, y \geq 0$, $\forall p \in [1, \infty)$.
+	\end{enumerate}
+\end{theorem}
+\section{Function}
+
+\begin{theorem}
+	Let $\Omega$ be an open set in $\mathbb{R}^{n}$.
+	The following statements holds.
+	\begin{enumerate}[label=(\alph*)] 
+		\rm\item (H\"{o}lder's inequality) \\[0.1cm]
+		If $u \in L^p(\Omega)$, $v \in L^q(\Omega)$ with $1 \leq p, q \leq \infty$, where $p$ and $q$ are conjugate exponents, then 
+		\begin{equation*} 
+			\int_{\Omega} |uv|dx \leq \left\| u \right\|_{L^p(\Omega)} \left\| g \right\|_{L^q(\Omega)}.
+		\end{equation*}
+		\rm\item (General version of H\"{o}lder's inequality) \\[0.1cm]
+		If $u_i \in L^{p_i}(\Omega)$ for $i = 1, 2, \ldots, m$ with $1 \leq p_1, p_2, \ldots, p_m \leq \infty$ satisfying $\frac{1}{p_1} + \frac{1}{p_2} + \cdots + \frac{1}{p_m} = 1$, then 
+		\begin{equation*} 
+			\int_{\Omega} |u_1 u_2 \cdots u_m |dx \leq \prod_{i=1}^m \left\| u_i \right\|_{L^{p_i}(\Omega)}.
+		\end{equation*}
+		\rm\item (Minkowski's inequality)\\[0.1cm]
+		If $u, v \in L^p(\Omega)$ with $1 \leq p  \leq \infty$, then 
+		\begin{equation*} 
+			\left\| u + v\right\|_{L^p(\Omega)} \leq \left\| u \right\|_{L^p(\Omega)} + \left\| v \right\|_{L^p(\Omega)}.
+		\end{equation*}
+		\rm\item (Interpolation inequality)\\[0.1cm]
+		Let $1 \leq p \leq r \leq q \leq \infty$, with 
+		\begin{equation*} 
+			\frac{1}{r} = \frac{\theta}{p} + \frac{1 - \theta}{q}
+		\end{equation*}
+		for some $\theta \in [0, 1]$.
+		If $u \in L^p(\Omega) \cap L^q(\Omega)$, then we also have $u \in L^r(\Omega)$ and 
+		\begin{equation*} 
+			\left\| u \right\|_{L^r(\Omega)} \leq \left\| u \right\|^{\theta}_{L^p(\Omega)} \left\| u \right\|^{1 - \theta}_{L^q(\Omega)}.
+		\end{equation*}
 	\end{enumerate}
 \end{theorem}
 
@@ -343,19 +383,19 @@ whenever $n < p \leq \infty$.
 
 \begin{theorem}
 	\emph{(Sobolev, \cite[Theorem 7.29]{2012_Giaquinta})}
-	Let $u \in W_0^{1, p}\left(B_R(0)\right)$, where $B_R(0) \subset \mathbb{R}^n$. Then there are universal constants $c, c_1, c_2$ and $c_3$, depending on $n$, such that
+	Let $u \in W_0^{1, p}\left(B_R(0)\right)$, where $B_R(0) \subset \mathbb{R}^n$. Then there are universal constants $c_1, c_2, c_3$ and $c_4$, depending on $n$, such that
 	\begin{enumerate}[label=(\alph*)] 
 	\rm\item if $1<p<n$ then 
 	\begin{equation*} 
-		\|u\|_{L^{p^*}} \leq c\|D u\|_{L^p},
+		\|u\|_{L^{p^*}} \leq c_1\|D u\|_{L^p},
 	\end{equation*}
 	\rm\item if $p = n$ then 
 	\begin{equation*} 
-		\dashint_{B_R(0)} \exp \left(c_1 \frac{|u|}{\|D u\|_{L^n}}\right)^{\frac{n}{n-1}} d x \leq c_2,
+		\dashint_{B_R(0)} \exp \left(c_2 \frac{|u|}{\|D u\|_{L^n}}\right)^{\frac{n}{n-1}} d x \leq c_3,
 	\end{equation*}
 	\rm\item if $p>n$ then 
 	\begin{equation*} 
-		\|u\|_{L^{\infty}} \leq c_3 R^{1-\frac{n}{p}}\|D u\|_{L^p}.
+		\|u\|_{L^{\infty}} \leq c_4 R^{1-\frac{n}{p}}\|D u\|_{L^p}.
 	\end{equation*}
 	\end{enumerate}
 \end{theorem}
