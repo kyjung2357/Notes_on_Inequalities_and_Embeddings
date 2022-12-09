@@ -1,6 +1,6 @@
-PWD c:\Users\user\Research\Notes_on_Inequalities_and_Embeddings
+PWD c:\Users\user\Research\Notes_on_Inequalities_and_Embeddings\tex
 INPUT C:\Users\user\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\user\Research\Notes_on_Inequalities_and_Embeddings\Notes on Inequalities and Embeddings.tex
+INPUT c:\Users\user\Research\Notes_on_Inequalities_and_Embeddings\tex\Notes on Inequalities and Embeddings.tex
 OUTPUT Notes on Inequalities and Embeddings.log
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -641,6 +641,10 @@ INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT .\Notes on Inequalities and Embeddings.bbl
+INPUT Notes on Inequalities and Embeddings.bbl
+INPUT .\Notes on Inequalities and Embeddings.bbl
+INPUT Notes on Inequalities and Embeddings.bbl
 INPUT Notes on Inequalities and Embeddings.aux
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb

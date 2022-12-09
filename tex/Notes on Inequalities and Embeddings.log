@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.27)  3 NOV 2022 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.27)  9 DEC 2022 17:18
 entering extended mode
-**"c:/Users/user/Research/Notes_on_Inequalities_and_Embeddings/Notes on Inequalities and Embeddings.tex"
-(c:/Users/user/Research/Notes_on_Inequalities_and_Embeddings/Notes on Inequalities and Embeddings.tex
+**"c:/Users/user/Research/Notes_on_Inequalities_and_Embeddings/tex/Notes on Inequalities and Embeddings.tex"
+(c:/Users/user/Research/Notes_on_Inequalities_and_Embeddings/tex/Notes on Inequalities and Embeddings.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-11> (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
@@ -440,19 +440,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 333.
 
-[7] (Notes on Inequalities and Embeddings.aux) ) 
+(Notes on Inequalities and Embeddings.bbl [7]) [8
+
+] (Notes on Inequalities and Embeddings.aux) ) 
 Here is how much of TeX's memory you used:
- 10254 strings out of 479163
- 151376 string characters out of 2854475
- 463922 words of memory out of 3000000
- 27653 multiletter control sequences out of 15000+600000
+ 10272 strings out of 479163
+ 151836 string characters out of 2854475
+ 463990 words of memory out of 3000000
+ 27659 multiletter control sequences out of 15000+600000
  415841 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,12n,77p,474b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,12n,77p,478b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Notes on Inequalities and Embeddings.pdf" (8 pages, 344645 bytes).
+Output written on "Notes on Inequalities and Embeddings.pdf" (9 pages, 353531 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

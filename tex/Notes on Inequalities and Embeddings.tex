@@ -207,7 +207,7 @@ Then
 	\begin{enumerate}[label=(\alph*)] 
 		\rm\item $1 + x \leq e^{x} \quad \forall x \in \mathbb{R}$.
 		\rm\item (Cauchy's inequality) \\[0.1cm]
-		$\displaystyle xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}$ 
+		$\displaystyle xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}$. 
 		\rm\item $\displaystyle e^{(x + y)/2} < \frac{e^{y} - e^{x}}{y - x} \quad \forall x, y \in \mathbb{R}$ with $x \neq y$.
 	\end{enumerate}
 	
@@ -218,13 +218,13 @@ Then
 	\begin{enumerate}[label=(\alph*)] 
 		\rm\item $\displaystyle \left(\frac{1}{e}\right)^{\frac{1}{e}} \leq x^{x} \quad \forall x > 0$.
 		\rm\item $\displaystyle x \leq x^{x^{x}} \quad \forall x > 0$.
-		\rm\item $1 < x^{y}+y^{x}  \quad \forall x, y > 0$
-		\rm\item $x^{y}+y^{x} \leq x^{x}+y^{y} \quad \forall x, y > 0$
-		\rm\item $x^{e y}+y^{e x} \leq x^{e x}+y^{e y} \quad \forall x, y > 0$
+		\rm\item $1 < x^{y}+y^{x}  \quad \forall x, y > 0$.
+		\rm\item $x^{y}+y^{x} \leq x^{x}+y^{y} \quad \forall x, y > 0$.
+		\rm\item $x^{e y}+y^{e x} \leq x^{e x}+y^{e y} \quad \forall x, y > 0$.
 		\rm\item $\displaystyle \frac{1-\frac{1}{x^{y}}}{y} \leq \ln (x) \leq \frac{x^{y} - 1}{y} \quad \forall x, y > 0$. The upper and lower bounds converge to $\ln (x)$ as $y \rightarrow 0$.
 		\rm\item $2 < (x+y)^{z}+(x+z)^{y}+(y+z)^{x} \quad \forall x, y, z > 0$.
 		\rm\item $x^{2 y}+y^{2 z}+z^{2 x} \leq x^{2 x}+y^{2 y}+z^{2 z} \quad \forall x, y, z > 0$.
-		\rm\item $(x y z)^{(x+y+z) / 3} \leq x^{x} y^{y} z^{z} \quad \forall x, y, z > 0$
+		\rm\item $(x y z)^{(x+y+z) / 3} \leq x^{x} y^{y} z^{z} \quad \forall x, y, z > 0$.
 	\end{enumerate}
 	
 \end{theorem}
@@ -321,7 +321,7 @@ whenever $n < p \leq \infty$.
 \end{theorem}
 
 \begin{theorem}
-    \text{\rm (Estimates for $W^{1, p}$, $n<p \leq \infty$)}
+    \text{\rm (Estimates for $W^{1, p}$, $n<p \leq \infty$, \cite{2010_Evans})}
     Let $U$ be a bounded, open subset of $\mathbb{R}^n$, and suppose $\partial U$ is $C^1$. Assume $n < p \leq \infty$ and $u \in W^{1, p}(U)$. 
     Then $u$ has a version $u^{\ast} \in C^{0, \gamma}(\overline{U})$ with with the estimate
     \begin{align*}
@@ -333,9 +333,37 @@ whenever $n < p \leq \infty$.
 \subsection{The case $p = \infty$}
 
 \begin{theorem}
-    \text{\rm (Characterization of $W^{1, \infty}$)}
-    Let $U$ be open and bounded, with $\partial U$ of class $C^1$. 
+	\emph{(Characterization of $W^{1, \infty}$, \cite{2010_Evans})}
+	Let $U$ be open and bounded, with $\partial U$ of class $C^1$. 
     Then $u: U \rightarrow \mathbb{R}$ is Lipschitz continuous if and only if $u \in W^{1, \infty}(U)$
 \end{theorem}
+
+\subsection{Summary}
+
+
+\begin{theorem}
+	\emph{(Sobolev, \cite[Theorem 7.29]{2012_Giaquinta})}
+	Let $u \in W_0^{1, p}\left(B_R(0)\right)$, where $B_R(0) \subset \mathbb{R}^n$. Then there are universal constants $c, c_1, c_2$ and $c_3$, depending on $n$, such that
+	\begin{enumerate}[label=(\alph*)] 
+	\rm\item if $1<p<n$ then 
+	\begin{equation*} 
+		\|u\|_{L^{p^*}} \leq c\|D u\|_{L^p},
+	\end{equation*}
+	\rm\item if $p = n$ then 
+	\begin{equation*} 
+		\dashint_{B_R(0)} \exp \left(c_1 \frac{|u|}{\|D u\|_{L^n}}\right)^{\frac{n}{n-1}} d x \leq c_2,
+	\end{equation*}
+	\rm\item if $p>n$ then 
+	\begin{equation*} 
+		\|u\|_{L^{\infty}} \leq c_3 R^{1-\frac{n}{p}}\|D u\|_{L^p}.
+	\end{equation*}
+	\end{enumerate}
+\end{theorem}
+
+
+
+
+\bibliographystyle{abbrv}
+\bibliography{Bibliography/Notes_on_Inequalities_and_Embeddings}{}
 
 \end{document}
