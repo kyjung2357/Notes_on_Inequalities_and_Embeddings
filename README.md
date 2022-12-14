@@ -6,4 +6,4 @@ Writing has been in progress since Nov. 2022.
 Any comments and suggestions are welcome.
 
 Author: Kiyuob Jung
-Updated: 2022.12.09
+Updated: 2022.12.15

@@ -103,11 +103,12 @@ In this note, we always denote $x=(x_1, x_2, \ldots, x_n)$ to be a point in $\ma
 
 \section{Definitions}
 
+\subsection{Integration}
 
 Here, we collect definitions for averages of a function.
 
 \begin{definition}
-	Let $f \in L^1(U)$ with an open set $U \subset \mathbb{R}^{n}$.
+	Let $f \in L^1(\Omega)$ with an open set $\Omega \subset \mathbb{R}^{n}$.
 	\begin{enumerate}[label=(\alph*)] 
 	\rm\item An average of $f$ over set $E$ is 
 	\begin{equation*} 
@@ -124,25 +125,49 @@ Here, we collect definitions for averages of a function.
 	\end{enumerate}
 \end{definition}
 
-As for integrability, TODO.
+When it comes to integrability, the following definition plays an important role.
 
 \begin{definition}
-    Let $p>1$ and define $q \in \mathbb{R}$ by 
+    Let $p>1$ and define $p' \in \mathbb{R}$ by 
     \begin{equation*} 
-        \frac{1}{p} + \frac{1}{q} = 1.
+        \frac{1}{p} + \frac{1}{p'} = 1.
     \end{equation*}
-    Then $p$ and $q$ are called \emph{conjugate exponents}.
+    Then $p$ and $p'$ are called \emph{conjugate exponents}.
 \end{definition}
+
+Even if some authors use $q$ instead of $p'$, we stick to using $p'$ in order to save letters and will use $q$ to stand for other integrability. 
 
 \begin{remark}
     A simple calculation shows the following:
     \begin{enumerate}[label=(\roman*)] 
-    \rm\item $pq = p + q$,
-    \rm\item $\displaystyle 1 = \frac{p+q}{pq}$,
-    \rm\item $(p-1)(q-1)=1$,
-    \rm\item $\displaystyle q= \frac{p}{p-1}$.
+    \rm\item $pp' = p + p'$,
+    \rm\item $\displaystyle 1 = \frac{p+p'}{pp'}$,
+    \rm\item $(p-1)(p'-1)=1$,
+    \rm\item $\displaystyle p'= \frac{p}{p-1}$.
     \end{enumerate}
 \end{remark}
+
+\subsection{Convex functions}
+
+\begin{definition}
+	A function $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is \emph{convex} if 
+	\begin{equation*} 
+		f(\lambda x+(1-\lambda) y) \leq \tau f(x)+(1-\lambda) f(y)
+	\end{equation*}
+	for all $x, y \in \mathbb{R}^n$ and each $0 \leq \lambda\leq 1$.
+\end{definition}
+
+\begin{remark}
+	If $f$ is $C^2$, then $f$ is convex if and only if $D^2 f \geq 0$.
+\end{remark}
+
+\begin{definition}
+	A $C^2$ function $f:\mathbb{R}^{n} \to \mathbb{R}$ is \emph{uniformly convex} if $D^2 g \geq \theta I$  for some constant $\theta > 0$, that is, 
+	\begin{equation*} 
+		\sum_{i, j=1}^n f_{x_i x_j}(x) \xi_i \xi_j \geq \theta|\xi|^2
+	\end{equation*}
+	for all $x, \xi \in \mathbb{R}^{n}$.
+\end{definition}
 
 \chapter{Basic properties}
 
@@ -150,7 +175,7 @@ As for integrability, TODO.
 \section{Change of variable}
 
 \begin{proposition}
-	Let $f:U \to \mathbb{R}$ with an open set $U \subset \mathbb{R}^{n}$.
+	Let $f:\Omega \to \mathbb{R}$ with an open set $\Omega \subset \mathbb{R}^{n}$.
 	\begin{enumerate}[label=(\alph*)] 
 	\rm\item $\displaystyle \int_{B_r(x_0)} f(ax + b) dx = \frac{1}{r^n}\int_{B_{ar}(x_0 + b)} f(x) dx$.
 	\rm\item $\displaystyle \dashint_{B_r(x_0)} f(ax + b) dx = \dashint_{B_{ar}(x_0 + b)} f(x) dx$.
@@ -234,11 +259,18 @@ Then
 	The following statements hold.
 	\begin{enumerate}[label=(\alph*)] 
 		\rm\item (Cauchy's inequality) \\[0.1cm]
-		$\displaystyle xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}$. 
+		\begin{equation*} 
+			xy \leq \frac{x^{2}}{2}+\frac{y^{2}}{2} \quad \forall x, y \in \mathbb{R}.
+		\end{equation*}
 		\rm\item (Cauchy's inequality with $\varepsilon$)\\[0.1cm]
-		$\displaystyle xy \leq \varepsilon x^{2}+\frac{y^{2}}{4 \varepsilon} \quad \forall x, y>0$, $\forall \varepsilon>0$.
+		\begin{equation*} 
+			xy \leq \varepsilon x^{2}+\frac{y^{2}}{4 \varepsilon} \quad \forall x, y>0, \quad \forall \varepsilon>0.
+		\end{equation*}
 		\rm\item (Young's inequality)\\[0.1cm]
-		$\displaystyle xy \leq \frac{x^p}{p} + \frac{y^q}{q} \quad \forall x, y>0$, $\forall 1 < p < q < \infty$, $p$ and $q$ are conjugate exponents.
+		\begin{equation*} 
+			xy \leq \frac{x^p}{p} + \frac{y^{p'}}{p'} \quad \forall x, y>0, \quad  \forall 1 < p, p' < \infty,
+		\end{equation*}
+		where $p$ and $p'$ are conjugate exponents.
 	\end{enumerate}
 \end{theorem}
 
@@ -253,14 +285,29 @@ Then
 \end{theorem}
 \section{Function}
 
+\subsection{Convex functions}
+
+\begin{theorem}
+	\emph{(Jensen's inequality)}
+
+	Assume $f: \mathbb{R}^m \rightarrow \mathbb{R}$ is convex and $\Omega \subset \mathbb{R}^n$ is open and bounded. 
+	Let $\mathbf{u}: \Omega \rightarrow \mathbb{R}^m$ be summable. 
+	Then
+	\begin{equation*} 
+		f\left(\dashint_{\Omega} \mathbf{u} d x \right) \leq \dashint_{\Omega} f(\mathbf{u}) dx.
+	\end{equation*}
+\end{theorem}
+
+\subsection{Sobolev space}
+
 \begin{theorem}
 	Let $\Omega$ be an open set in $\mathbb{R}^{n}$.
 	The following statements hold.
 	\begin{enumerate}[label=(\alph*)] 
 		\rm\item (H\"{o}lder's inequality) \\[0.1cm]
-		If $u \in L^p(\Omega)$, $v \in L^q(\Omega)$ with $1 \leq p, q \leq \infty$, where $p$ and $q$ are conjugate exponents, then 
+		If $u \in L^p(\Omega)$, $v \in L^{p'}(\Omega)$ with $1 \leq p, p' \leq \infty$, where $p$ and $p'$ are conjugate exponents, then 
 		\begin{equation*} 
-			\int_{\Omega} |uv|dx \leq \left\| u \right\|_{L^p(\Omega)} \left\| g \right\|_{L^q(\Omega)}.
+			\int_{\Omega} |uv|dx \leq \left\| u \right\|_{L^p(\Omega)} \left\| g \right\|_{L^{q'}(\Omega)}.
 		\end{equation*}
 		\rm\item (General version of H\"{o}lder's inequality) \\[0.1cm]
 		If $u_i \in L^{p_i}(\Omega)$ for $i = 1, 2, \ldots, m$ with $1 \leq p_1, p_2, \ldots, p_m \leq \infty$ satisfying $\frac{1}{p_1} + \frac{1}{p_2} + \cdots + \frac{1}{p_m} = 1$, then 
@@ -322,7 +369,8 @@ Broadly speaking, given a Sobolev space $W^{k, p}$, imbeddings of $W^{k, p}$ tar
 \end{remark}
 
 \begin{theorem}
-    \text{\rm (Gagliardo-Nirenberg-Sobolev inequality)}
+    \emph{(Gagliardo-Nirenberg-Sobolev inequality, \cite{2010_Evans})}
+
     If $1 \leq p < n$, then there exists a constant $C$, depending only on $p$ and $n$, such that
     \begin{align*}
     \|u\|_{L^{p^*}\left(\mathbb{R}^n\right)} \leq C\|D u\|_{L^p\left(\mathbb{R}^n\right)},
@@ -331,7 +379,8 @@ Broadly speaking, given a Sobolev space $W^{k, p}$, imbeddings of $W^{k, p}$ tar
 \end{theorem}
 
 \begin{theorem}  
-    \text{\rm (Estimates for $W^{1, p}, 1 \leq p < n$)}
+    \emph{(Estimates for $W^{1, p}, 1 \leq p < n$, \cite{2010_Evans})}
+
     Let $U$ be a bounded, open subset of $\mathbb{R}^n$, and suppose $\partial U$ is $C^1$. 
     Assume $1 \leq p < n$ and $u \in W^{1, p}(U)$. 
     Then $u \in L^{p^*}(U)$, with the estimate
@@ -345,14 +394,15 @@ Broadly speaking, given a Sobolev space $W^{k, p}$, imbeddings of $W^{k, p}$ tar
 
 \subsection{The case $n < p \leq \infty$}
 
-For convenience as in the notation for the Sobolev conjugate, we write 
+For convenience as in the notation for H\"{o}lder exponents, we write 
 \begin{equation*} 
-    \gamma:=1- \frac{n}{p},
+    \gamma := 1- \frac{n}{p},
 \end{equation*}
 whenever $n < p \leq \infty$.
 
 \begin{theorem}
-    \text{\rm (Morrey's inequality)}
+    \emph{(Morrey's inequality, \cite{2010_Evans})}
+
     If $n < p \leq \infty$, then there exists a constant $C$, depending only on $p$ and $n$, such that
     \begin{align*}
     \|u\|_{C^{0, \gamma}\left(\mathbb{R}^n\right)} \leq C\|u\|_{W^{1, p}\left(\mathbb{R}^n\right)}
@@ -361,7 +411,8 @@ whenever $n < p \leq \infty$.
 \end{theorem}
 
 \begin{theorem}
-    \text{\rm (Estimates for $W^{1, p}$, $n<p \leq \infty$, \cite{2010_Evans})}
+    \emph{(Estimates for $W^{1, p}$, $n<p \leq \infty$, \cite{2010_Evans})}
+
     Let $U$ be a bounded, open subset of $\mathbb{R}^n$, and suppose $\partial U$ is $C^1$. Assume $n < p \leq \infty$ and $u \in W^{1, p}(U)$. 
     Then $u$ has a version $u^{\ast} \in C^{0, \gamma}(\overline{U})$ with with the estimate
     \begin{align*}
@@ -374,6 +425,7 @@ whenever $n < p \leq \infty$.
 
 \begin{theorem}
 	\emph{(Characterization of $W^{1, \infty}$, \cite{2010_Evans})}
+
 	Let $U$ be open and bounded, with $\partial U$ of class $C^1$. 
     Then $u: U \rightarrow \mathbb{R}$ is Lipschitz continuous if and only if $u \in W^{1, \infty}(U)$
 \end{theorem}
@@ -383,6 +435,7 @@ whenever $n < p \leq \infty$.
 
 \begin{theorem}
 	\emph{(Sobolev, \cite[Theorem 7.29]{2012_Giaquinta})}
+
 	Let $u \in W_0^{1, p}\left(B_R(0)\right)$, where $B_R(0) \subset \mathbb{R}^n$. Then there are universal constants $c_1, c_2, c_3$ and $c_4$, depending on $n$, such that
 	\begin{enumerate}[label=(\alph*)] 
 	\rm\item if $1<p<n$ then 
