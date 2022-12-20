@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2021.11.13)  15 DEC 2022 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2021.11.13)  15 DEC 2022 22:22
 entering extended mode
 **"c:/Users/KIYUOB/Research/Notes_on_Inequalities_and_Embeddings/tex/Notes on Inequalities and Embeddings.tex"
 ("c:/Users/KIYUOB/Research/Notes_on_Inequalities_and_Embeddings/tex/Notes on Inequalities and Embeddings.tex"
@@ -455,21 +455,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 424.
 
-("Notes on Inequalities and Embeddings.bbl" [9]) [10
+("Notes on Inequalities and Embeddings.bbl" [9] [10]) [11
 
 ] ("Notes on Inequalities and Embeddings.aux") ) 
 Here is how much of TeX's memory you used:
- 10362 strings out of 480851
- 153250 string characters out of 2903154
- 651563 words of memory out of 3000000
+ 10363 strings out of 480851
+ 153257 string characters out of 2903154
+ 652563 words of memory out of 3000000
  27739 multiletter control sequences out of 15000+600000
  417079 words of font info for 77 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  74i,12n,80p,480b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/KIYUOB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Notes on Inequalities and Embeddings.pdf" (11 pages, 386621 bytes).
+Output written on "Notes on Inequalities and Embeddings.pdf" (12 pages, 388455 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

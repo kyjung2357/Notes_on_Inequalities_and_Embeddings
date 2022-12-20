@@ -454,7 +454,19 @@ whenever $n < p \leq \infty$.
 \end{theorem}
 
 
+The Riesz potential of a function $f$ with respect to a positive integer $\alpha$ is defined as
 
+$$I_\alpha f(x) = \frac{1}{\Gamma(\alpha)} \int_{\mathbb{R}^n} \frac{f(y)}{|x-y|^{n-\alpha}} ,dy$$
+
+where $\Gamma$ is the gamma function. In your case, the value of $\alpha$ is 1, so the Riesz potential becomes
+
+$$I_1 f(x) = \frac{1}{\Gamma(1)} \int_{\mathbb{R}^n} \frac{f(y)}{|x-y|^{n-1}} ,dy$$
+
+Since $\Gamma(1) = 1$, the Riesz potential reduces to
+
+$$I_1 f(x) = \int_{\mathbb{R}^n} \frac{f(y)}{|x-y|^{n-1}} ,dy$$
+
+This is the general formula for the Riesz potential with $\alpha=1$. Note that the value of $n$ (the dimension of the space) can be any positive integer. To compute the Riesz potential for a specific function $f$, you will need to specify the value of $n$ and evaluate the integral for each value of $x$ where the potential is desired.
 
 \bibliographystyle{abbrv}
 \bibliography{Bibliography/Notes_on_Inequalities_and_Embeddings}{}
